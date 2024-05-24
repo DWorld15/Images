@@ -1,8 +1,4 @@
-FROM alpine
+FROM alpine:latest
 
-RUN apk upgrade --no-cache && \
-    apk add --no-cache openjdk17-jre-base
-
-ENTRYPOINT ["java"]
-
-CMD ["-version"]
+RUN echo -e 'https://mirror.tuna.tsinghua.edu.cn/alpine/v3.4/main\nhttps://mirror.tuna.tsinghua.edu.cn/alpine/v3.4/community' > /etc/apk/repositories && \
+apk add openjdk17-jdk && rm -rf /var/cache/apk/*
