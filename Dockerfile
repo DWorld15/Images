@@ -1,2 +1,2 @@
-FROM registry.k8s.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2
+FROM openjdk:17-jre
 MAINTAINER dsw dsw@163.com
