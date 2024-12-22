@@ -1,2 +1,2 @@
-FROM node:18-alpine
+FROM lifei6671/mindoc:latest
 MAINTAINER dsw dsw@163.com
